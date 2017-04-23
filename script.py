@@ -12,6 +12,41 @@ headers = {
     # "Accept": "application/json",
     # "Content-Length": "41"
 }
+
+class Error(Exception):
+   """Base class for other exceptions"""
+   pass
+
+class BadRequestError(Error):
+	"""Raised when getTree gives Bad Request"""
+	pass
+
+class Book:
+	def __init__(self, title, location, callNumber):
+		self.title = title
+		self.location = location
+		self.callNumber = callNumber
+
+	def getLocation():
+		return self.location
+
+	def getCallNumber():
+		return self.callNumber
+
+	def __str__(self):
+		return "{:30s} | {:20s} | {:20s}".format(self.title, self.location, self.callNumber)
+		
+class Library:
+	availBooks = []
+	def __init__(self, name):
+		self.name = name
+
+	def addBook(book):
+		availBooks.append(book)
+
+	def getBooks():
+		return availBooks
+
 def getTree(s,book):
 	try:
 		page = requests.get(s,headers=headers)
@@ -25,16 +60,7 @@ def getTree(s,book):
 	finally:
 		return tree
 
-class Error(Exception):
-   """Base class for other exceptions"""
-   pass
-
-class BadRequestError(Error):
-	"""Raised when getTree gives Bad Request"""
-	pass
-
 def getAvailBooks(book,url):
-	avail=0
 	# print("\n"+book)
 	tree = getTree(url,book) 
 	
@@ -42,29 +68,37 @@ def getAvailBooks(book,url):
 		for tr in table.findall('tr'):
 			td_list = tr.findall('td')
 			if td_list != []:
-				#index 1 is location
 				library = td_list[0].text_content()
+				location = td_list[1].text_content()
+				callNum = td_list[2].text_content()
 				status = td_list[3].text_content()
-				#index 2 is call number eg. English SHU
+
 				if status == "Available":
-					avail+=1
+					newBook = Book(book, location, callNum)
 					# print(library)
 					if library in d:
-						d[library].append(book)
+						d[library].append(newBook)
 					else:
-						d[library] = [book]
-
-file = open('booklist.txt','r')
+						d[library] = [newBook]
 
 #to query d about library
 def queryLibrary(lib):
 	if lib in d:
-		return d[lib]
+		for b in d[lib]:
+			print(b)
 	return 'None'
 
+def getResults(libList):
+	for lib in libList:
+		print(lib)
+		queryLibrary(lib)
+		print('\n')
+	
 myLibList = [
 		  'Marine Parade Public Library',
-		  'Bedok Public Library'
+		  'Bedok Public Library',
+		  'Geylang East Public Library',
+		  'Central Public Library'
 			]
 
 #to build dictionary, d
@@ -74,20 +108,9 @@ for line in file:
 	url = lineList[1]
 	getAvailBooks(book,url)
 
-def getResults(libList):
-	for lib in libList:
-		print(lib)
-		print(queryLibrary(lib))
-		print("\n")
+file = open('booklist.txt','r')
 
 getResults(myLibList)
 # print(d)
 # print(getLibraryBooks('Marine Parade Public Library'))
 # b = tree.xpath('//table[@class="clsTab1"]/text()')
-
-"""TO DO
-- Populate booklist.txt
-- Change book as object
-- display lib with top books
-- ranked in order of preference of library
-"""
