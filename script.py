@@ -2,42 +2,92 @@ from lxml import html
 from lxml.etree import tostring
 import requests
 
-toRead = {
-		 'Caraval':'http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=caraval&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=caraval&SORTS=SQL_REL_TITLE',
-		 'A Conjuring Of Light':'http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/FULL/EXPNOS/BIBENQ/12926382/198926227,1',
-		 'Scythe':'http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?BRN=202733463'
-		 }
-
-libList = []
-
-
-def getTree(str):
-	page = requests.get(str)
-	tree = html.fromstring(page.content)
-	return tree
-# to print entire tree
-# print(tostring(tree))
+#Stores libraries as keys and the books available there as values
 d = {}
-for book,url in toRead.items():
-	print (book)
-	tree = getTree(url)
+
+headers = {
+    # "Host": "api.sitescout.com",
+    # "Authorization": "Basic YmVldGhvdmVuOmxldG1laW4=",
+    "Content-Type": "text/html; charset=UTF-8"
+    # "Accept": "application/json",
+    # "Content-Length": "41"
+}
+def getTree(s,book):
+	try:
+		page = requests.get(s,headers=headers)
+		tree = html.fromstring(page.content)
+		if "Bad Request" in tree.text_content():
+			raise BadRequestError
+
+	except BadRequestError:
+		print(book+" Bad Request")
+	
+	finally:
+		return tree
+
+class Error(Exception):
+   """Base class for other exceptions"""
+   pass
+
+class BadRequestError(Error):
+	"""Raised when getTree gives Bad Request"""
+	pass
+
+def getAvailBooks(book,url):
+	avail=0
+	# print("\n"+book)
+	tree = getTree(url,book) 
+	
 	for table in tree.find_class('clsTab1'):
-		avail = 0
 		for tr in table.findall('tr'):
 			td_list = tr.findall('td')
 			if td_list != []:
-				#index 0 is library
 				#index 1 is location
+				library = td_list[0].text_content()
+				status = td_list[3].text_content()
 				#index 2 is call number eg. English SHU
-				#index 3 is status
-				if td_list[3].text_content() == "Available":
+				if status == "Available":
 					avail+=1
-					print (td_list[0].text_content())
-				# d[]=td_list[3].text_content()
-	if avail == 0:
-		print("None Available\n")
-	else:
-		print("\n")
-# print(d)
+					# print(library)
+					if library in d:
+						d[library].append(book)
+					else:
+						d[library] = [book]
 
+file = open('booklist.txt','r')
+
+#to query d about library
+def queryLibrary(lib):
+	if lib in d:
+		return d[lib]
+	return 'None'
+
+myLibList = [
+		  'Marine Parade Public Library',
+		  'Bedok Public Library'
+			]
+
+#to build dictionary, d
+for line in file:
+	lineList = line.split(';')
+	book = lineList[0]
+	url = lineList[1]
+	getAvailBooks(book,url)
+
+def getResults(libList):
+	for lib in libList:
+		print(lib)
+		print(queryLibrary(lib))
+		print("\n")
+
+getResults(myLibList)
+# print(d)
+# print(getLibraryBooks('Marine Parade Public Library'))
 # b = tree.xpath('//table[@class="clsTab1"]/text()')
+
+"""TO DO
+- Populate booklist.txt
+- Change book as object
+- display lib with top books
+- ranked in order of preference of library
+"""
