@@ -1,20 +1,27 @@
 A Conjuring Of Light;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13164742?QRY=CTIBIB%3C%20IRN(197477872)&QRYTEXT=A%20conjuring%20of%20light
 Caraval;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=caraval&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=caraval&SORTS=SQL_REL_TITLE
-Scythe;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?BRN=202733463
 Daughter of Smoke & Bone;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13166156?QRY=CTIBIB%3C%20IRN(2343082)&QRYTEXT=Daughter%20of%20smoke%20and%20bone
-What She Knew;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/FULL/EXPNOS/BIBENQ/13214651/192424249,1
 Heartless;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=Heartless+marissa+king+of+hearts&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=Heartless+marissa+king+of+hearts&SORTS=SQL_REL_TITLE
 What Alice Forgot;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13161956?QRY=CTIBIB%3C%20IRN(4682489)&QRYTEXT=What%20Alice%20forgot
-Forgive Me, Leonard Peacock;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=forgive+me+leonard+peacock&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=forgive+me+leonard+peacock&SORTS=SQL_REL_TITLE
-Dangerous girls;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/FULL/EXPNOS/BIBENQ/13137159/44274830,1
 All the ugly and wonderful things;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=all+the+ugly+and+wonderful+things&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=all+the+ugly+and+wonderful+things&SORTS=SQL_REL_TITLE
 Don't get caught;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=dont+get+caught+kurt+dinan&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=dont+get+caught+kurt+dinan&SORTS=SQL_REL_TITLE
-What we saw;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=what+we+saw+aaron+hartzler&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=what+we+saw+aaron+hartzler&SORTS=SQL_REL_TITLE
 It's kind of a funny story;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13248284?QRY=CTIBIB%3C%20IRN(1174205)&QRYTEXT=It%27s%20kind%20of%20a%20funny%20story
 All the light we cannot see;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=all+the+light+we+cannot+see+anthony+doerr+new+york&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=all+the+light+we+cannot+see+anthony+doerr+new+york&SORTS=SQL_REL_TITLE
-The inexplicable logic of my life;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=the+inexplicable+logic+of+my+life&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=the+inexplicable+logic+of+my+life&SORTS=SQL_REL_TITLE
-The forgetting time;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13252827?QRY=CTIBIB%3C%20IRN(151579353)&QRYTEXT=The%20forgetting%20time%20%3A%20a%20novel
 A man called ove;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13253797?QRY=CTIBIB%3C%20IRN(85724779)&QRYTEXT=A%20man%20called%20Ove
 Carve the mark;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13254845?QRY=CTIBIB%3C%20IRN(197467768)&QRYTEXT=Carve%20the%20mark
-The sun is also a star;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13256978?QRY=CTIBIB%3C%20IRN(181277192)&QRYTEXT=The%20Sun%20is%20also%20a%20star
 Holding up the universe;https://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ/13257705?QRY=CTIBIB%3C%20IRN(181269832)&QRYTEXT=Holding%20up%20the%20universe
+A court of wings and ruin;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=court+of+wings+and+ruin&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=court+of+wings+and+ruin&SORTS=SQL_REL_TITLE
+The boy on the bridge;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=the+boy+on+the+bridge+carey&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=the+boy+on+the+bridge+carey&SORTS=SQL_REL_TITLE
+Perfect (Cecelia Ahern);http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=perfect+ahern+flawed+sequel&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=perfect+ahern+flawed+sequel&SORTS=SQL_REL_TITLE
+Dark Matter(Large Print);http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/2736605?REFINE_OPER=&QRY=SER%3A%20%27.%20THORNDIKE%20PRESS%20LARGE%20PRINT%20BILLS%20BOOKSHELF%20.%27&SQL=&QRYTEXT=Series%3A%20Thorndike%20Press%20large%20print%20Bill%27s%20bookshelf
+Traitor to the throne;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/3379792?REFINE_OPER=&QRY=BIBTYP%3A%20RDACONTENT_TXT&SQL=&QRYTEXT=Content%20Type%3A%20text
+Suffer love;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=suffer+love+ashley&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=suffer+love+ashley&SORTS=SQL_REL_TITLE
+Symptoms of being human;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/3388101?REFINE_OPER=&QRY=BIBTYP%3A%20RDACONTENT_TXT&SQL=&QRYTEXT=Content%20Type%3A%20text
+I'll give you the sun;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/3393089?REFINE_OPER=&QRY=AUD%3A%20(C%20%2F%20D)&SQL=&QRYTEXT=Audience%3A%20Youth
+All our yesterdays;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/3394980?REFINE_OPER=&QRY=AUD%3A%20(C%20%2F%20D)&SQL=&QRYTEXT=Audience%3A%20Youth
+History is all you left me;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/REFSET/EXPNOS/BIBENQ/6697205?REFINE_OPER=&QRY=FIC%3A%20(C%20%2F%20F%20%2F%20J%20%2F%201)&SQL=&QRYTEXT=Fiction%2FNon-Fiction%3A%20Fiction
+Letters to the lost;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?BRN=202844623
+The hate u give;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=the+hate+u+give&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=the+hate+u+give&SORTS=SQL_REL_TITLE
+A quiet kind of thunder;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=a+quiet+kind+of+thunder&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=a+quiet+kind+of+thunder&SORTS=SQL_REL_TITLE
+All american boys;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?ENTRY=all+american+boys+jason+reynolds&ENTRY_NAME=BS&ENTRY_TYPE=K&GQ=all+american+boys+jason+reynolds&SORTS=SQL_REL_TITLE
+Beautiful broken things;http://catalogue.nlb.gov.sg/cgi-bin/spydus.exe/ENQ/EXPNOS/BIBENQ?BRN=202477586

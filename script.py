@@ -27,10 +27,10 @@ class Book:
 		self.location = location
 		self.callNumber = callNumber
 
-	def getLocation():
+	def getLocation(self):
 		return self.location
 
-	def getCallNumber():
+	def getCallNumber(self):
 		return self.callNumber
 
 	def __str__(self):
@@ -41,10 +41,10 @@ class Library:
 	def __init__(self, name):
 		self.name = name
 
-	def addBook(book):
+	def addBook(self,book):
 		availBooks.append(book)
 
-	def getBooks():
+	def getBooks(self):
 		return availBooks
 
 def getTree(s,book):
@@ -86,7 +86,6 @@ def queryLibrary(lib):
 	if lib in d:
 		for b in d[lib]:
 			print(b)
-	return 'None'
 
 def getResults(libList):
 	for lib in libList:
@@ -101,6 +100,8 @@ myLibList = [
 		  'Central Public Library'
 			]
 
+file = open('booklist.txt','r')
+
 #to build dictionary, d
 for line in file:
 	lineList = line.split(';')
@@ -108,9 +109,6 @@ for line in file:
 	url = lineList[1]
 	getAvailBooks(book,url)
 
-file = open('booklist.txt','r')
-
 getResults(myLibList)
 # print(d)
-# print(getLibraryBooks('Marine Parade Public Library'))
 # b = tree.xpath('//table[@class="clsTab1"]/text()')
