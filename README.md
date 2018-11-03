@@ -26,3 +26,7 @@ pip install requests
 ```
 ### 23/4/2017
 ![Work in Progress Yay](Capture1.PNG)
+
+### 4/8/2018
+To activate venv: `venv\Scripts\activate`
+To deactivate: `deactivate`
